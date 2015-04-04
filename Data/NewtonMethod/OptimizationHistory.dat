@@ -1,0 +1,8 @@
+% Purple: An Open Source Numerical Optimization C++ Library.
+% Newton Method Optimization History.
+% 1 - Iteration.
+% 2 - Objective function evaluation.
+% 3 - Objective function gradient norm.
+0 3 3.4641
+1 0 0
+

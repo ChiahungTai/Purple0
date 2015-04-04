@@ -1,0 +1,24 @@
+% Purple: An Open Source Numerical Optimization C++ Library.
+% Conjugate Gradient Object.
+InitialArgument:
+1.2 1.2 1.2 1.2 1.2 1.2 1.2 1.2 1.2 1.2 
+SearchDirectionMethod:
+FletcherReeves
+OptimalStepSizeMethod:
+BrentMethod
+FirstStepSize:
+0.001
+OptimalStepSizeTolerance:
+1e-06
+EvaluationGoal:
+0
+GradientNormGoal:
+0
+MaximumTime: 
+1000
+MaximumNumberOfIterations: 
+1000
+WarningStepSize: 
+1000
+ShowPeriod: 
+100

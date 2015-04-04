@@ -1,0 +1,22 @@
+% Purple: An Open Source Numerical Optimization C++ Library.
+% Gradient Descent Object.
+InitialArgument:
+1 1 1 
+OptimalStepSizeMethod:
+BrentMethod
+FirstStepSize:
+0.001
+OptimalStepSizeTolerance:
+1e-06
+EvaluationGoal:
+0
+GradientNormGoal:
+0
+MaximumTime: 
+1000
+MaximumNumberOfIterations: 
+100
+WarningStepSize: 
+1000
+ShowPeriod: 
+10

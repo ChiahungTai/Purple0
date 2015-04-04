@@ -1,0 +1,32 @@
+% Purple: An Open Source Numerical Optimization C++ Library.
+% Newton Method Object.
+% Your comments here
+PopulationSize:
+
+NumberOfVariables:
+
+FitnessAssignmentMethod:
+
+SelectionMethod:
+
+RecombinationMethod:
+
+MutationMethod:
+
+SelectivePressure:
+
+RecombinationSize:
+
+MutationRate:
+
+MutationRange: 
+
+EvaluationGoal: 
+
+MaximumTime: 
+
+MaximumNumberOfGenerations: 
+
+ShowPeriod: 
+
+Population:

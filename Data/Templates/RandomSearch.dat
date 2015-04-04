@@ -1,0 +1,10 @@
+% Purple: An Open Source Numerical Optimization C++ Library.
+% Random Search Object.
+% Your comments here
+EvaluationGoal:
+
+MaximumTime: 
+
+MaximumNumberOfEvaluations: 
+
+ShowPeriod: 

@@ -1,0 +1,56 @@
+################################################################################
+#                                                                              # 
+#   Purple: An Open Source Numerical Optimization C++ Library                  #
+#                                                                              #
+#   D E   J O N G   F U N C T I O N   M A K E F I L E                          #
+#                                                                              #
+#   Roberto Lopez                                                              #
+#   International Center for Numerical Methods in Engineering (CIMNE)          #
+#   Technical University of Catalonia (UPC)                                    #
+#   Barcelona, Spain                                                           #
+#   E-mail: rlopez@cimne.upc.edu                                               #
+#                                                                              #
+################################################################################
+
+
+objects = DeJongFunctionApplication.o \
+    	  ObjectiveFunction.o \
+          DeJongFunction.o \
+
+Purple: $(objects)
+	g++ $(objects) -o Purple
+
+# Main function
+
+DeJongFunctionApplication.o: ../Applications/DeJongFunctionApplication.cpp
+	g++ -c ../Applications/DeJongFunctionApplication.cpp -o DeJongFunctionApplication.o
+
+# Objective function
+
+ObjectiveFunction.o: ../Purple/ObjectiveFunction/ObjectiveFunction.cpp
+	g++ -c ../Purple/ObjectiveFunction/ObjectiveFunction.cpp -o  ObjectiveFunction.o
+
+DeJongFunction.o: ../Purple/ObjectiveFunction/DeJongFunction.cpp
+	g++ -c ../Purple/ObjectiveFunction/DeJongFunction.cpp -o DeJongFunction.o
+
+
+clean:
+	rm $(objects) Purple
+
+
+# Purple: An Open Source Numerical Optimization C++ Library.
+# Copyright (C) 2006 Roberto Lopez
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA

@@ -1,0 +1,14 @@
+% Purple: An Open Source Numerical Optimization C++ Library.
+% Newton Method Object.
+InitialArgument:
+1 1 1 
+EvaluationGoal:
+0.001
+GradientNormGoal:
+0
+MaximumTime: 
+1000
+MaximumNumberOfIterations: 
+1
+ShowPeriod: 
+1
